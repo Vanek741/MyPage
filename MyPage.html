@@ -1,0 +1,59 @@
+<html>
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>Иван Устюгов</title>
+
+    <style type = "text/css">
+            body {
+                background-color: firebrick;
+            }
+            h1 {color: white;}
+            h2 {color: whitesmoke;}
+            j  {color: yellow; background-color: blue}
+            n  {color: blue; background-color: yellow}
+    </style>
+
+    </head>
+
+    <body>
+
+            <h1>Иван Устюгов</h1>
+            <h2>Студент, футбольный болельщик и чуть-чуть музыкант</h2>
+
+            <div id="CheckInfo"> <input type="button" value="Открыть информацию обо мне" onclick="OpenInfo()" /></div>
+
+            <script>
+                function OpenInfo(){
+                    CheckInfo.innerHTML =   'Нажмите, чтобы начать: ' +
+                                            '<input type="button" value="Моё студенчество" onclick="StudentInfo()" />';
+                }
+                function StudentInfo(){
+                    CheckInfo.innerHTML =   'Студент ДВФУ на направлении МОАИС. ' +
+                                            'Изучаю такие языки, как HTML, CSS, JavaScritp, C++ и испанский :-) ' +
+                                            ' <input type="button" value="Мой футбол" onclick="FootballInfo()" />';
+                }
+                function FootballInfo(){
+                    CheckInfo.innerHTML =   'Люблю футбол. Болею за команды: ' +
+                                            'Спартак (Москва), Луч (Владивосток), Лас-Пальмас (Испания) ' +
+                                            ' <input type="button" value="Моя музыка" onclick="MusicInfo()" />';
+                }
+                function MusicInfo(){
+                    CheckInfo.innerHTML =   'Играю на гитаре, сочиняю песни, выступаю. ' +
+                                            'Совсем банально умею играть и на пианино / синтезаторе' +
+                                            ' <input type="button" value="Завершить чтение" onclick="CloseInfo()" />';
+                }
+                function CloseInfo(){
+                    CheckInfo.innerHTML =   'На этом всё! ' +
+                                            'Если хотите узнать обо мне ещё раз, нажмите на кнопку:' +
+                                            ' <input type="button" value="Открыть информацию обо мне" onclick="OpenInfo()" />';
+                }
+            </script>
+
+            <j><span> _____________________________________________________________________________________ </span></j>
+            <n><span> _____________________________________________________________________________________ </span></n>
+
+        </body>
+
+</html>
